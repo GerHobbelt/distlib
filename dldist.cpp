@@ -5,6 +5,8 @@
 #include<algorithm>
 #include<iostream>
 #include "utf8_unicode.hpp"
+#include "pylcs.hpp"
+
 
 using std::string;
 using std::vector;

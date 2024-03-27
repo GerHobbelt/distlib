@@ -32,26 +32,9 @@ SOFTWARE.
 #include <string>
 #include "pylcs.hpp"
 
-// C++ functions must be declared before extern "C" !!!
-
-double jaroDistance(const std::string& a, const std::string& b);
-double jaroWinklerDistance(const std::string& a, const std::string& b);
-
-int levenshtein_dist(const std::string &word1, const std::string &word2);
-double levenshtein_distp(const std::string &word1, const std::string &word2);
-int dl_dist(const std::string &word1, const std::string &word2);
-double dl_distp(const std::string &str1, const std::string &str2);
-
-int lcs_length_(const std::string &str1, const std::string &str2);
-structRet lcs2_length_(const std::string &str1, const std::string &str2);
-
-std::string lcseq(const std::string &X, const std::string &Y);
-std::string lcstr(const std::string &X, const std::string &Y);
-
 #ifdef __cplusplus
 extern "C" {
 #endif
-
 
 extern const sqlite3_api_routines *sqlite3_api;
 extern sqlite3 *thisdb;
